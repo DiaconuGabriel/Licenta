@@ -4,7 +4,7 @@ Acest proiect este un ceas gandit sa fie conectat la internet constant, iar daca
 
 # Diagrama de conexiuni pentru ceas
 
-![image](https://github.com/user-attachments/assets/3fd64a11-0882-4231-887e-5342efda8749)
+![pinning_proiect_2](https://github.com/user-attachments/assets/77ffd26c-529c-4fa0-a6c6-646aebf71d60)
 
 # UI ceas
 
