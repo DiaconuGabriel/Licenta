@@ -152,10 +152,10 @@ bool numar_deconectari = false;
 //                    Firebase                    //
 //------------------------------------------------//
 
-const char* DATABASE_URL = "https://licenta-48df4-default-rtdb.europe-west1.firebasedatabase.app/";
-const char* API_KEY =  "AIzaSyAouxXLkHD1LlRQSuk84pEpMjekDDC3IMM";
-const char* USER_EMAIL =  "gabrieldiaconu16@gmail.com";
-const char* USER_PASSWORD =  "parola";
+const char* DATABASE_URL = "********";  // aici trebuie setate variabilele pentru baza de date
+const char* API_KEY =  "********";
+const char* USER_EMAIL =  "********";
+const char* USER_PASSWORD =  "********";
 
 FirebaseData fbdo;
 FirebaseAuth auth;
@@ -233,9 +233,6 @@ void setup()
   WiFi.mode(WIFI_STA);
   WiFi.disconnect();
   WiFi.begin("fjdslajfdasv", "vasdvasdvlsF");
-
-  // WiFi.begin("UPC1728403", "vxmptyv8fHuF");
-  // WiFi.begin("TP-Link_47D4", "29393145");
 
   tft.begin();  
 
