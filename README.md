@@ -1,2 +1,2 @@
 # Licenta - Dispozitiv portabil pentru monitorizarea sănătății și navigare bazat pe Arduino și Flutter
-Acest proiect este un ceas gandit sa 
+Acest proiect este un ceas gandit sa fie conectat la internet constant, iar daca cumva se deconecteaza de la interent va incerca sa se reconecteze si daca nu exista nici o retea disponibila atunci va activa bluetooth, facand posibila utilizarea aplicatie Android dezvoltata cu Flutter, pentru a trimite alte credentiale pentru ca ESP32 S3, micrrocontrolerul utilizat, sa se poata conecta la internt.
