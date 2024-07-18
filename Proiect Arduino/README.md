@@ -9,3 +9,4 @@
 5. Build the project
 
 Note that this project doesn't contain touch pad driver. You can use an other Arudino library for your touchpad controller. 
+# FISIERUL ARDUINO CARE TREBUIE RULAT SE AFLA IN FOLDERUL UI. NU FOLDERUL UI DIN LIBRARY
