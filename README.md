@@ -1,10 +1,12 @@
 # Bachelor’s Thesis – Portable Health Monitoring and Navigation Device Based on Arduino and Flutter
 
-This project is a smartwatch designed to remain constantly connected to the internet. If the device loses internet connectivity, it will attempt to reconnect, and if no network is available, it will activate Bluetooth, allowing the Android app developed in Flutter to send new credentials so the ESP32-S3 microcontroller can connect to the internet.
+Built a functional prototype of a wearable health monitoring system similar to a smartwatch using C/C++ and the ESP32-S3 microcontroller. The device measures heart rate, blood oxygen level, steps, and includes a compass for navigation, integrating multiple sensors: a 9-axis IMU (MPU9250), a MAX30102 pulse oximeter, and an RTC module. The device also features a touchscreen display with a custom-created UI interface.
 
-The watch is equipped with a 9-axis IMU sensor (MPU9250), a MAX30102 sensor for measuring heart rate and blood oxygen levels, and an RTC module to keep track of time even when the watch has no power. Using the MPU, specifically accelerometer data, the device can calculate the number of steps taken in a day. It also computes the distance traveled and calories burned. Navigation functionality is provided through a built-in compass.
+The system is managed with multiple concurrent tasks under FreeRTOS. For debugging concurrency issues and random crashes, the GCC toolchain was used. Custom C++ classes were implemented for interfacing with the I2C MPU9250 and MAX30102 sensors, following OOP principles and interpreting datasheets to configure the devices at the register level. A calibration algorithm for the IMU was developed and validated using Python to process serial data and create visualizations.
 
-Heart rate, blood oxygen levels, steps, distance, and calories burned are stored in a Firebase real-time database.
+Sensor data is transmitted to Firebase via Wi-Fi, with BLE connectivity managed through a custom Android app built in Flutter, allowing configuration and network setup. Power usage is optimized by enabling Wi-Fi and BLE only when needed, balancing connectivity and battery life. 
+
+Comprehensive documentation was created for system design, sensor integration, and firmware functionality.
 
 # Connection Diagram for the Watch
 
